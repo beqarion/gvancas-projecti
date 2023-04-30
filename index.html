@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Learning Center</title>
+  <link rel="icon" href="bell-regular.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav id="nav" class="nav">
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./integral-logo.jpg" class="logo" alt="logo">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="links-container">
+          <ul class="links">
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hero-section">
+      <div class="banner">
+        <h1>Welcome to My Learning Center</h1>
+        <p>We provide high-quality education in English, Math, Physics, Chemistry, Russian Language, Painting, and Chess
+          for children ages 6-15.</p>
+        <a href="#contact" class="cta-button">Schedule a Visit</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section" id="programs">
+      <div class="section-title">
+        <h2>Programs</h2>
+      </div>
+      <div class="section-center programs-center">
+        <!-- program -->
+        <article class="program">
+          <div class="program-img">
+            <img class="img" src="./qartuli.jpg" alt="">
+          </div>
+          <div class="program-text">
+            <h3 class="program-title">English Language</h3>
+            <p>Our English Language program is designed to help children develop strong reading, writing, and speaking
+              skills. We use interactive games, songs, and stories to make learning fun and engaging.</p>
+            <p>Classes are offered on weekdays and weekends, with options for both individual and group lessons.</p>
+          </div>
+        </article>
+        <!-- Repeat this section for each subject area you teach -->
+      </div>
+    </section>
+
+    <!-- <section class="section" id="teachers">
+      <h2>Our Teachers</h2>
+      <div class="teacher">
+        <img src="" alt="Teacher 1">
+        <h3>Jane Smith</h3>
+        <p>Jane has a degree in Education from XYZ University and has been teaching English for 10 years. She is
+          passionate about helping children learn and grow, and she always strives to make her lessons fun and
+          interactive.</p>
+      </div>
+      Repeat this section for each teacher you have
+    </section> -->
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; My Learning Center 2023</p>
+  </footer>
+  <!-- JavaScript files -->
+  <script src="script.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
