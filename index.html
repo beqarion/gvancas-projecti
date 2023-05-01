@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Learning Center</title>
-  <link rel="icon" href="bell-regular.svg">
+  <link rel="icon" href="images/bell-regular.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +18,7 @@
     <nav id="nav" class="nav">
       <div class="nav-center">
         <div class="nav-header">
-          <img src="./integral-logo.jpg" class="logo" alt="logo">
+          <img src="./images/integral-logo.jpg" class="logo" alt="logo">
           <button class="nav-toggle">
             <i class="fas fa-bars"></i>
           </button>
@@ -49,7 +49,7 @@
         <!-- program -->
         <article class="program">
           <div class="program-img">
-            <img class="img" src="./qartuli.jpg" alt="">
+            <img class="img" src="./images/qartuli.jpg" alt="">
           </div>
           <div class="program-text">
             <h3 class="program-title">English Language</h3>
@@ -74,24 +74,56 @@
       Repeat this section for each teacher you have
     </section> -->
 
-    <section class="section" id="contact">
-      <h2>Contact Us</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <input type="submit" value="Send">
-      </form>
+    <section class="section contact-form" id="contact">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="section-center">
+        <form>
+          <div class="form-input">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-input">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-input">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-input">
+            <input type="submit" value="Send" class="btn send-btn">
+          </div>
+        </form>
+      </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; My Learning Center 2023</p>
+  <footer class="footer">
+    <div class="section-center footer-center">
+      <div class="contact-info">
+        <div class="">
+          <p><i class="fa fa-map-marker"></i> 123 Main Street, Anytown USA</p>
+          <p><a href="geo:37.422,-122.084"><i class="fa fa-map"></i> Get Directions</a></p>
+          <p><i class="fa fa-envelope"></i> info@mylitlelearningcenter.com</p>
+          <p><i class="fa fa-phone"></i> 555-123-4567</p>
+
+        </div>
+        <div class="socials">
+          <h3>Connect with Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-viber"></i></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p>&copy; 2023 My Little Learning Center. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
   <!-- JavaScript files -->
-  <script src="script.js"></script>
   <script src="./script.js"></script>
 </body>
 
