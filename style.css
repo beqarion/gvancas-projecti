@@ -97,11 +97,12 @@ Header
   margin: 0 auto;
   background: var(--clr-white);
 }
+
 .nav .social-icons {
   display: none;
 }
 .nav .social-icons a {
-  color: var(--clr-black);
+  color: rgba();
 }
 
 .nav-header {
@@ -140,6 +141,7 @@ Header
   display: block;
   font-weight: bold;
   padding: 0.75rem 0;
+  letter-spacing: 0.175rem;
   transition: var(--transition);
 }
 .links a:hover {
@@ -181,7 +183,21 @@ Header
     display: flex;
     gap: 0.75rem;
   }
-
+  /* fixed nav */
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--clr-white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .fixed-nav .links a {
+    color: var(--clr-black);
+  }
+  .fixed-nav .links a:hover {
+    color: rgb(100, 100, 12);
+  }
   /* icons style */
   .nav .social-icons i {
     transition: var(--transition);
@@ -218,14 +234,33 @@ Header
 .banner {
   color: rgba(255, 255, 255, 0.85);
   max-width: 400px;
-  padding: 0.5rem;
+  padding: 1.2rem;
 }
 .banner h1 {
   margin-bottom: 0.75rem;
+  line-height: 1;
+  letter-spacing: 0px;
 }
 .banner p {
-  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  margin-bottom: 0.75rem;
 }
+@media screen and (min-width: 768px) {
+  .banner {
+    max-width: none;
+  }
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+  }
+  .banner p {
+    max-width: 36rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .cta-button {
   text-transform: uppercase;
   background: transparent;
@@ -243,6 +278,7 @@ Header
 .cta-button:hover {
   background: var(--clr-white);
   color: var(--clr-black);
+  font-weight: bold;
 }
 
 /* Programs */
