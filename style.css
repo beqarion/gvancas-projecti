@@ -88,11 +88,20 @@ Header
 */
 .header {
   min-height: 100vh;
+  background: linear-gradient(rgba(18, 17, 10, 0.7), rgba(0, 0, 0, 0.9)),
+    url("./images/integral-bg.png") no-repeat center/cover;
 }
 .nav {
   padding: 1rem 1.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
+  background: var(--clr-white);
+}
+.nav .social-icons {
+  display: none;
+}
+.nav .social-icons a {
+  color: var(--clr-black);
 }
 
 .nav-header {
@@ -120,22 +129,8 @@ Header
   transition: var(--transition);
   height: 0;
 }
-@media screen and (min-width: 768px) {
-  .nav-toggle {
-    display: none;
-  }
-  .links-container {
-    height: auto;
-  }
-  .links {
-    display: flex;
-    gap: 1rem;
-  }
-  .nav-center {
-    display: flex;
-    justify-content: space-between;
-  }
-}
+
+/* end of  icons style */
 .links a {
   color: var(--clr-black);
   font-size: 1.1rem;
@@ -154,15 +149,70 @@ Header
   padding-top: 2rem;
   height: calc(144px + 2rem);
 }
+@media screen and (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto;
+  }
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+  .show-links {
+    padding-top: 0;
+  }
+  .nav {
+    background: transparent;
+  }
+  .links a {
+    color: var(--clr-white);
+  }
+  .links a:hover {
+    color: rgb(100, 100, 12);
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav .social-icons {
+    display: flex;
+    gap: 0.75rem;
+  }
 
+  /* icons style */
+  .nav .social-icons i {
+    transition: var(--transition);
+  }
+  .nav .social-icons .fa-facebook {
+    color: hsla(218, 86%, 60%, 1);
+  }
+  .nav .social-icons .fa-facebook:hover {
+    color: hsla(218, 86%, 54%, 0.5);
+  }
+
+  .nav .social-icons .fa-whatsapp {
+    color: hsla(135, 76%, 55%, 1);
+  }
+  .nav .social-icons .fa-whatsapp:hover {
+    color: hsla(135, 76%, 55%, 0.5);
+  }
+
+  .nav .social-icons .fa-viber {
+    color: hsla(253, 30%, 60%, 1);
+  }
+  .nav .social-icons .fa-viber:hover {
+    color: hsla(253, 30%, 60%, 0.5);
+  }
+}
 /* hero */
 .hero-section {
   display: grid;
   place-items: center;
   text-align: center;
   min-height: 100vh;
-  background: linear-gradient(rgba(18, 17, 10, 0.7), rgba(0, 0, 0, 0.9)),
-    url("./images/integral-bg.png") no-repeat center/cover;
 }
 /* banner */
 .banner {
@@ -277,6 +327,9 @@ Header
   gap: 1.2rem;
   /* grid-template-columns: auto auto; */
   justify-content: space-between;
+}
+.social-icons {
+  font-size: 1.5rem;
 }
 
 .col-1 p {
