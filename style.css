@@ -232,7 +232,7 @@ Header
 /* banner */
 .banner {
   color: rgba(255, 255, 255, 0.85);
-  max-width: 400px;
+  max-width: 500px;
   padding: 1.2rem;
 }
 .banner h1 {
@@ -368,12 +368,35 @@ Header
 }
 
 .col-1 p {
-  margin-bottom: 0.3rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 3rem;
+}
+.col-1 i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer i {
+  font-size: 2rem;
 }
 .col-2 h3 {
   margin-bottom: 0.5rem;
 }
+.social-icons *:not(:last-child) i {
+  margin-right: 0.875rem;
+}
 .copyright {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .contact-info {
+    grid-template-columns: auto auto;
+  }
+  .col-2 {
+    text-align: right;
+  }
 }
