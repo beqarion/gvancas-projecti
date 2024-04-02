@@ -1,119 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My Learning Center</title>
+    <link
+      rel="icon"
+      href="images/bell-regular.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS stylesheets -->
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Learning Center</title>
-  <link rel="icon" href="images/bell-regular.svg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- CSS stylesheets -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "101391772468356");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v16.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <!-- end of Messenger Chat plugin Code -->
-  <header class="header">
-    <nav id="nav" class="nav">
-      <div class="nav-center">
-        <div class="nav-header">
-          <img src="./images/integral-logo.jpg" class="logo" alt="logo">
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+  <body>
+    <header class="header">
+      <nav
+        id="nav"
+        class="nav"
+      >
+        <div class="nav-center">
+          <div class="nav-header">
+            <img
+              src="./images/integral-logo.jpg"
+              class="logo"
+              alt="logo"
+            />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#contact">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/integrali2022"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/call?phone="
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="viber://call?number="
+              target="_blank"
+              ><i class="fab fa-viber"></i
+            ></a>
+          </div>
         </div>
-        <div class="links-container">
-          <ul class="links">
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#contact">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+      </nav>
+      <div class="hero-section">
+        <div class="banner">
+          <h1>Welcome to My Learning Center</h1>
+          <p>
+            We provide high-quality education in English, Math, Physics,
+            Chemistry, Russian Language, Painting, and Chess for children ages
+            6-15.
+          </p>
+          <a
+            href="#contact"
+            class="cta-button"
+            >Schedule a Visit</a
+          >
         </div>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/integrali2022" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://api.whatsapp.com/call?phone=" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          <a href="viber://call?number=" target="_blank"><i class="fab fa-viber"></i></a>
+      </div>
+    </header>
+    <main>
+      <section
+        class="section"
+        id="programs"
+      >
+        <div class="section-title">
+          <h2>Programs</h2>
+          <div class="title-underline"></div>
         </div>
-      </div>
-    </nav>
-    <div class="hero-section">
-      <div class="banner">
-        <h1>Welcome to My Learning Center</h1>
-        <p>We provide high-quality education in English, Math, Physics, Chemistry, Russian Language, Painting, and Chess
-          for children ages 6-15.</p>
-        <a href="#contact" class="cta-button">Schedule a Visit</a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="section" id="programs">
-      <div class="section-title">
-        <h2>Programs</h2>
-        <div class="title-underline"></div>
-      </div>
-      <div class="section-center programs-center">
-        <!-- program -->
-        <article class="program">
-          <div class="program-img">
-            <img class="img" src="./images/qartuli.jpg" alt="">
-          </div>
-          <div class="program-text">
-            <h3 class="program-title">English Language</h3>
-            <p>Our English Language program is designed to help children develop strong reading, writing, and speaking
-              skills. We use interactive games, songs, and stories to make learning fun and engaging.</p>
-            <p>Classes are offered on weekdays and weekends, with options for both individual and group lessons.</p>
-          </div>
-        </article>
-        <!-- Repeat this section for each subject area you teach -->
-        <!-- program -->
-        <article class="program">
-          <div class="program-img">
-            <img class="img" src="./images/qartuli.jpg" alt="">
-          </div>
-          <div class="program-text">
-            <h3 class="program-title">English Language</h3>
-            <p>Our English Language program is designed to help children develop strong reading, writing, and speaking
-              skills. We use interactive games, songs, and stories to make learning fun and engaging.</p>
-            <p>Classes are offered on weekdays and weekends, with options for both individual and group lessons.</p>
-          </div>
-        </article>
-        <!-- Repeat this section for each subject area you teach -->
-      </div>
-    </section>
+        <div class="section-center programs-center">
+          <!-- program -->
+          <article class="program">
+            <div class="program-img">
+              <img
+                class="img"
+                src="./images/qartuli.jpg"
+                alt=""
+              />
+            </div>
+            <div class="program-text">
+              <h3 class="program-title">English Language</h3>
+              <p>
+                Our English Language program is designed to help children
+                develop strong reading, writing, and speaking skills. We use
+                interactive games, songs, and stories to make learning fun and
+                engaging.
+              </p>
+              <p>
+                Classes are offered on weekdays and weekends, with options for
+                both individual and group lessons.
+              </p>
+            </div>
+          </article>
+          <!-- Repeat this section for each subject area you teach -->
+          <!-- program -->
+          <article class="program">
+            <div class="program-img">
+              <img
+                class="img"
+                src="./images/qartuli.jpg"
+                alt=""
+              />
+            </div>
+            <div class="program-text">
+              <h3 class="program-title">English Language</h3>
+              <p>
+                Our English Language program is designed to help children
+                develop strong reading, writing, and speaking skills. We use
+                interactive games, songs, and stories to make learning fun and
+                engaging.
+              </p>
+              <p>
+                Classes are offered on weekdays and weekends, with options for
+                both individual and group lessons.
+              </p>
+            </div>
+          </article>
+          <!-- Repeat this section for each subject area you teach -->
+        </div>
+      </section>
 
-    <!-- <section class="section" id="teachers">
+      <!-- <section class="section" id="teachers">
       <h2>Our Teachers</h2>
       <div class="teacher">
         <img src="" alt="Teacher 1">
@@ -125,59 +157,108 @@
       Repeat this section for each teacher you have
     </section> -->
 
-    <section class="section contact-form" id="contact">
-      <div class="section-title">
-        <h2>Contact Us</h2>
-        <div class="title-underline"></div>
-      </div>
-      <div class="section-center">
-        <form>
-          <div class="form-input">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-input">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-input">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <div class="form-input">
-            <input type="submit" value="Send" class="btn send-btn">
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="section-center footer-center">
-      <div class="contact-info">
-        <div class="col-1">
-          <p><a href=""><i class="fa fa-map-marker"></i> 123 Main Street, Anytown USA</a></p>
-          <p><a href="geo:37.422,-122.084"><i class="fa fa-map"></i> Get Directions</a></p>
-          <p><a href=""><i class="fa fa-envelope"></i> info@mylitlelearningcenter.com</a></p>
-          <p><a href=""><i class="fa fa-phone"></i> 555-123-4567</a></p>
-
+      <section
+        class="section contact-form"
+        id="contact"
+      >
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <div class="title-underline"></div>
         </div>
-        <div class="col-2 socials">
-          <h3>Connect with Us</h3>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/integrali2022" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://api.whatsapp.com/call?phone=" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="viber://call?number=" target="_blank"><i class="fab fa-viber"></i></a>
+        <div class="section-center">
+          <form>
+            <div class="form-input">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-input">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-input">
+              <input
+                type="submit"
+                value="Send"
+                class="btn send-btn"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="section-center footer-center">
+        <div class="contact-info">
+          <div class="col-1">
+            <p>
+              <a href=""
+                ><i class="fa fa-map-marker"></i> 123 Main Street, Anytown
+                USA</a
+              >
+            </p>
+            <p>
+              <a href="geo:37.422,-122.084"
+                ><i class="fa fa-map"></i> Get Directions</a
+              >
+            </p>
+            <p>
+              <a href=""
+                ><i class="fa fa-envelope"></i>
+                info@mylitlelearningcenter.com</a
+              >
+            </p>
+            <p>
+              <a href=""><i class="fa fa-phone"></i> 555-123-4567</a>
+            </p>
           </div>
-
+          <div class="col-2 socials">
+            <h3>Connect with Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/integrali2022"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/call?phone="
+                target="_blank"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="viber://call?number="
+                target="_blank"
+                ><i class="fab fa-viber"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="copyright">
+            &copy; <span class="date"></span> My Little Learning Center. All
+            rights reserved.
+          </p>
         </div>
       </div>
-      <div>
-        <p class="copyright">&copy; <span class="date"></span> My Little Learning Center. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <!-- JavaScript files -->
-  <script src="./script.js"></script>
-</body>
-
+    </footer>
+    <!-- JavaScript files -->
+    <script src="./script.js"></script>
+  </body>
 </html>
