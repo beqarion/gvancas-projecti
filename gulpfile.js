@@ -8,7 +8,7 @@ const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 const eslint = require("gulp-eslint");
 
-// const cssmin = require("gulp-cssmin");
+const cleancss = require("gulp-clean-css");
 
 const jsBuild = function () {
   return gulp
@@ -23,17 +23,18 @@ const jsBuild = function () {
 };
 jsBuild.displayName = "js:build";
 
-// const cssBuild = function () {
-//   return gulp
-//     .src("./*.css")
-//     .pipe(sourcemaps.init())
-//     .pipe(concat("all.css"))
-//     .pipe(cssmin())
-//     .pipe(sourcemaps.write("."))
-//     .pipe(gulp.dest("output/"))
-//     .pipe(reload({ stream: true }));
-// };
-// cssBuild.displayName = "css:build";
+const cssBuild = function () {
+  console.log("running cssbuild");
+  return gulp
+    .src("./*.css")
+    .pipe(sourcemaps.init())
+    .pipe(cleancss())
+    .pipe(concat("all.css"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("output/"))
+    .pipe(reload({ stream: true }));
+};
+cssBuild.displayName = "css:build";
 
 function watchFiles() {
   watch("./script.js", copy);
@@ -62,7 +63,7 @@ exports.watch = watchFiles;
 exports.jsBuild = jsBuild;
 
 // css build (css:build) as displayName
-// exports.cssBuild = cssBuild;
+exports.cssBuild = cssBuild;
 
 // webserver
 exports.webserver = webserver;
