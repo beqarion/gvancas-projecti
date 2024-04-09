@@ -1,0 +1,2 @@
+var bundle;(()=>{const e=document.querySelector(".nav-toggle"),n=document.querySelector(".links-container");e.addEventListener("click",(function(){n.classList.toggle("show-links")}));document.querySelector(".date").innerHTML=(new Date).getFullYear();const t=document.getElementById("nav");window.addEventListener("scroll",(function(){window.pageYOffset>t.getBoundingClientRect().height?t.classList.add("fixed-nav"):t.classList.remove("fixed-nav")})),bundle={}})();
+//# sourceMappingURL=bundle.js.map
